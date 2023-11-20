@@ -36,4 +36,4 @@ Requirements
 The main focus and takeaways for me was DOM manipulation and utilizing class.
 
 Although the usage of Classes may not have been optimal, I had set a personal goal to use them as a form of practice.
-as of Nov 20, 2023 it sits at version 1. This was made in a 10-12 hour coding time over 3 days and focused on getting a MVP up and running.
+as of Nov 20, 2023 it sits at version 1. 
