@@ -1,0 +1,43 @@
+body {
+    background-color: #ebe3d5;
+}
+h1,
+a,
+p {
+    font-family: 'Source Code Pro', monospace;
+}
+p {
+    font-size: 20px;
+    padding: 10px;
+    margin: 0px;
+}
+.typingTest {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 25px;
+}
+.word {
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.513);
+}
+
+.active {
+    background-color: rgba(255, 255, 0, 0.377);
+}
+.incorrect {
+    background-color: rgba(255, 0, 0, 0.322);
+}
+.correct {
+    background-color: rgba(0, 128, 0, 0.326);
+}
+.welcomePage {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#startGameTag {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}

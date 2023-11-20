@@ -1,0 +1,22 @@
+.header {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 40px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#timer {
+    background-color: rgba(253, 200, 166, 0.815);
+    border-radius: 20px;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgba(203, 100, 203, 0.784);
+}
