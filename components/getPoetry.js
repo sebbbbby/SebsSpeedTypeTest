@@ -20,6 +20,9 @@ export class Poetry {
 
         this.textDiv.innerHTML = sanitizedArrays
         this.numberOfDivs = this.textDiv.childElementCount
+
+        const setBackgroundColor = document.querySelector('.typingTest')
+        setBackgroundColor.style.backgroundColor = '#aaa4995c'
     }
 
     getNumberOfDivs() {

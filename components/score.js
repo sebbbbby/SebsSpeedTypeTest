@@ -73,7 +73,7 @@ export function displayScores() {
     const test = document.querySelector('.typingTest')
     const timer = document.querySelector('#timer')
     test.style.display = 'none'
-    // timer.style.display = 'none'
+    timer.style.display = 'none'
 
     const storedData = JSON.parse(localStorage.getItem('wordData')) || []
 

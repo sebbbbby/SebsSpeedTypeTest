@@ -5,10 +5,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
 }
 
 #timer {
-    background-color: rgba(253, 200, 166, 0.815);
+    background-color: rgba(253, 166, 166, 0.815);
     border-radius: 20px;
     padding: 10px;
 }
