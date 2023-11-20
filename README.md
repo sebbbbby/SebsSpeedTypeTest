@@ -25,6 +25,7 @@ Requirements
 - Fix minor bugs (backspace issue)
 - Improve UI/UX
 - Refactoring some of the logic
+- show a specified amount of word then erase/add when needed
 
 
 ## Lessons Learned
