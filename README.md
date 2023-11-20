@@ -1,6 +1,6 @@
 
 # Speed Typing Test
-
+Start with Welcome.HTML and enjoy
 
 Typing Speed Test app that allows users to test their typing speed and accuracy. The app will retrieve text from a public API (PoetryDB API). 
 
@@ -22,10 +22,13 @@ Requirements
 ## Optimizations
 
 - User Profiles (setting up a BE)
-- Fix minor bugs (backspace issue)
+- Fix minor bugs
+  - backspace issue
+  - last letter allowed to be corrected without backspace
 - Improve UI/UX
 - Refactoring some of the logic
 - show a specified amount of word then erase/add when needed
+- if user types additional letters, display letters
 
 
 ## Lessons Learned
