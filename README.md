@@ -1,4 +1,4 @@
-# SebsSpeedTypeTest
+# Sebs Speed Type Test
 
 Typing Speed Test app that allows users to test their typing speed and accuracy. The app will retrieve text from a public API (PoetryDB API). 
 
