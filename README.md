@@ -1,4 +1,6 @@
-# Sebs Speed Typing Test
+
+# Speed Typing Test
+
 
 Typing Speed Test app that allows users to test their typing speed and accuracy. The app will retrieve text from a public API (PoetryDB API). 
 
@@ -23,3 +25,11 @@ Requirements
 - Fix minor bugs (backspace issue)
 - Improve UI/UX
 - Refactoring some of the logic
+
+
+## Lessons Learned
+
+The main focus and takeaways for me was DOM manipulation and utilizing class.
+
+Although the usage of Classes may not have been optimal, I had set a personal goal to use them as a form of practice.
+as of Nov 20, 2023 it sits at version 1. This was made in a 10-12 hour coding time over 3 days and focused on getting a MVP up and running.
