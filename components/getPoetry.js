@@ -7,22 +7,38 @@ export class Poetry {
     }
 
     async getPoetryText() {
-        const randomLineCount = Math.floor(Math.random() * 14) + 25
-        const randomPoemIndex = Math.floor(Math.random() * 10)
-        // I wanted a minimum and maximum amount of lines from the poetry. This would allow for the diversity of poems/lengths. Truly decrease the possibility of getting the same poem, the index of the which poem to pick from the given poemList.
-        const response = await fetch(
-            `https://poetrydb.org/linecount/${randomLineCount}`
-            // 'https://poetrydb.org/title/Ozymandias/lines.json' this is for testing
-        )
-        const poetryArray = await response.json()
-        const poetryArrayLines = poetryArray[0]['lines']
-        const sanitizedArrays = this.cleanJSONdata(poetryArrayLines)
+        try {
+            const randomLineCount = Math.floor(Math.random() * 14) + 25
+            const randomPoemIndex = Math.floor(Math.random() * 10)
+            const response = await fetch(
+                `https://poetrydb.org/linecount/${randomLineCount}`
+            )
+            if (!response.ok) {
+                throw new Error(
+                    `Failed to fetch poetry. Status: ${response.status}`
+                )
+            }
 
-        this.textDiv.innerHTML = sanitizedArrays
-        this.numberOfDivs = this.textDiv.childElementCount
+            const poetryArray = await response.json()
+            if (
+                !Array.isArray(poetryArray) ||
+                poetryArray.length === 0 ||
+                !poetryArray[0].lines
+            ) {
+                throw new Error('Invalid poetry data received')
+            }
 
-        const setBackgroundColor = document.querySelector('.typingTest')
-        setBackgroundColor.style.backgroundColor = '#aaa4995c'
+            const poetryArrayLines = poetryArray[0].lines
+            const sanitizedArrays = this.cleanJSONdata(poetryArrayLines)
+
+            this.textDiv.innerHTML = sanitizedArrays
+            this.numberOfDivs = this.textDiv.childElementCount
+
+            const setBackgroundColor = document.querySelector('.typingTest')
+            setBackgroundColor.style.backgroundColor = '#aaa4995c'
+        } catch (error) {
+            console.error('Error fetching poetry:', error.message)
+        }
     }
 
     getNumberOfDivs() {

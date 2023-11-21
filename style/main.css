@@ -22,6 +22,9 @@ p {
     padding: 20px;
     border-radius: 20px;
     margin: 10px 10px 0 10px;
+    overflow: hidden;
+    max-height: 600px;
+    /* we will need to adjust these overflow and max height for when we removed words in future verisions */
 }
 .word {
     padding: 10px;
@@ -40,18 +43,7 @@ p {
 .welcomePage {
     height: 100vh;
 }
-.welcomeInfo {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-.footer {
-    display: block;
-    box-sizing: border-box;
-    background-color: #434342b2;
-    padding: 15px;
-    width: 100%;
-}
+
 #startGameTag {
     font-size: 30px;
     font-weight: bold;

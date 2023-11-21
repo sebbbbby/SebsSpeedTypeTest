@@ -17,7 +17,14 @@ export class UserInputHandler {
         const wordDiv = wordDivs[this.game.currentWordIndex]
         const letterTags = wordDiv.querySelectorAll('.letter')
         const currentLetterTag = letterTags[this.game.currentLetterIndex]
-        console.log('no backspace: ', currentLetterTag)
+        if (param === BACKSPACE_KEY) {
+            // const indexOfCurrentLetterTag =
+            //     Array.from(letterTags).indexOf(currentLetterTag)
+            // console.log(indexOfCurrentLetterTag) POTENTIAL FIX MAYBE?
+
+            this.game.clearClassWhenBackspacing(currentLetterTag)
+        }
+
         if (!wordDiv) {
             console.log(
                 'Word div not found at provided index:',
@@ -68,10 +75,6 @@ export class UserInputHandler {
             }
 
             console.log('letter tags: ', letterTags)
-        }
-        if (param === BACKSPACE_KEY) {
-            this.game.clearClassWhenBackspacing(currentLetterTag)
-            console.log(currentLetterTag)
         }
     }
 }

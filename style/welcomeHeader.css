@@ -1,0 +1,28 @@
+.welcomeHeader {
+    background-color: #000000b5;
+    height: 8vh;
+    justify-content: right;
+    align-items: center;
+    display: flex;
+}
+
+.signIn {
+    width: 10em;
+    height: 5ex;
+    border: transparent;
+    border-radius: 5px;
+    font-family: 'Source Code Pro', monospace;
+    margin-right: 10px;
+}
+
+.signIn:hover {
+    cursor: pointer;
+}
+.welcomeInfo {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.welcomePage {
+    max-height: 750px;
+}
